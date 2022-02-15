@@ -34,11 +34,15 @@
         "import/namespace": 0,
         "import/no-unresolved": 0,
         "import/no-named-as-default": 2,
+        "react/prefer-stateless-function": "off",
         "comma-dangle": 0,
         "indent": [2, 2, {"SwitchCase": 1}],
         "no-console": 0,
         "no-alert": 0,
-        "linebreak-style": 0
+        "linebreak-style": 0,
+        "quotes": "off",
+        "semi": [2, "never"]
+        // "quotes": ["error", "single"]
     },
     "globals": {
         "__DEVELOPMENT__": true,
