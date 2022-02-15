@@ -1,0 +1,50 @@
+// Your variable overrides
+$amaranth: #F50537;
+$peppermint: #F1FAEE;
+$aqua-island: #A8DADC;
+$wedgewood: #457B9D;
+$cello: #1D3557;
+$shark: #0A090C;
+$silver-tree: #52B788;
+
+$custom-colors: (
+  'amaranth': 	$amaranth,
+  'peppermint': 	$peppermint,
+  'aqua-island': 	$aqua-island,
+  'cello': 	$cello,
+  'shark': 		$shark,
+  'silver-tree': 		$silver-tree,
+);
+
+// set new colors
+$primary: $wedgewood;
+$danger:  $amaranth;
+$info:    $cello;
+
+$theme-colors: (
+  "primary":  $primary,
+  "danger":   $danger,
+  "info":     $info,
+  "success":  $silver-tree
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+// borders
+$border-radius:               0;
+$border-radius-sm:            0;
+$border-radius-lg:            0;
+$border-radius-pill:          0;
+
+// remove the default focus from bootstrap
+$btn-focus-box-shadow: none;
+$input-btn-focus-width:         0;
+$input-btn-focus-box-shadow: none;
+$input-btn-focus-width: 0;
+$input-btn-focus-color-opacity: 0;
+
+$enable-negative-margins: true;
+
+// Import bootstrap latest
+// @import 'bootstrap';
+@import "~bootstrap/scss/bootstrap.scss";
