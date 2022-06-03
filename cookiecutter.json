@@ -1,3 +1,7 @@
 {
-    "project_name": "myproject"
+  "project_name": "myproject",
+  "_copy_without_render": [
+    "src/components/auth/RequireAuth.jsx",
+    "src/components/shared/ScrollUp.jsx"
+  ]
 }
