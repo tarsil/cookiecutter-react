@@ -1,81 +1,84 @@
 {
-    "env": {
-        "browser": true,
-        "es2021": true,
-        "commonjs": true,
-        "es6": true,
-        "node": true
-    },
-    "extends": [
-        "eslint:recommended",
-        "plugin:react/recommended"
-    ],
-    "parserOptions": {
-        "ecmaFeatures": {
-            "jsx": true
-        },
-        "ecmaVersion": "latest",
-        "sourceType": "module"
-    },
-    "plugins": [
-        "react",
-        "jsx-a11y"
-    ],
-    "settings": {
-        "import/parser": "babel-eslint",
-        "import/resolve": {
-          "moduleDirectory": ["node_modules", "src"]
-        }
-    },
-    "rules": {
-        "brace-style": "error",
-        "camelcase": ["error", { "properties": "never" }],
-        "func-call-spacing": ["error", "never"],
-        "keyword-spacing": ["error", { "before": true }],
-        "space-infix-ops": ["error", { "int32Hint": false }],
-        "object-curly-spacing": ["error", "always"],
-        "eqeqeq": "warn",
-        "indent": ["error", 2, { "SwitchCase": 1 }],
-        "key-spacing": ["error", { "beforeColon": false }],
-        "no-console": 0,
-        "no-alert": 0,
-        "no-tabs": 0,
-        "no-debugger": "off",
-        "no-fallthrough": "warn",
-        "prefer-const": "error",
-        "quotes": "off",
-        "semi": [2, "never"],
-        "comma-dangle": [
-            "error",
-            {
-                "arrays": "never",
-                "objects": "always-multiline",
-                "imports": "never",
-                "exports": "never",
-                "functions": "never"
-            }
-        ],
-        "react/prop-types": [0],
-        "react/react-in-jsx-scope": "off",
-        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
-        "new-cap": [2, { "capIsNewExceptions": ["List", "Map", "Set"] }],
-        "react/no-multi-comp": 0,
-        "import/default": 0,
-        "import/no-duplicates": 0,
-        "import/named": 0,
-        "import/namespace": 0,
-        "import/no-unresolved": 0,
-        "import/no-named-as-default": "off",
-        "react/prefer-stateless-function": "off",
-        "linebreak-style": 0
-    },
-    "globals": {
-        "__DEVELOPMENT__": true,
-        "__CLIENT__": true,
-        "__SERVER__": true,
-        "__DISABLE_SSR__": true,
-        "__DEVTOOLS__": true,
-        "socket": true,
-        "webpackIsomorphicTools": true
+  "env": {
+    "browser": true,
+    // "es2021": true,
+    "commonjs": true,
+    "es6": true
+    // "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended"
+  ],
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 8,
+    "ecmaFeatures": {
+      "jsx": true,
+      "modules": true,
+      "experimentalObjectRestSpread": true
     }
+  },
+  "plugins": ["react", "jsx-a11y"],
+  "settings": {
+    "import/parser": "babel-eslint",
+    "import/resolve": {
+      "moduleDirectory": ["node_modules", "src"]
+    }
+  },
+  "rules": {
+    "brace-style": "error",
+    "camelcase": ["error", { "properties": "never" }],
+    "func-call-spacing": ["error", "never"],
+    "keyword-spacing": ["error", { "before": true }],
+    "space-infix-ops": ["error", { "int32Hint": false }],
+    "object-curly-spacing": ["error", "always"],
+    "eqeqeq": "warn",
+    "indent": ["error", 2, { "SwitchCase": 1 }],
+    "key-spacing": ["error", { "beforeColon": false }],
+    "no-console": 0,
+    "no-debugger": "off",
+    "no-alert": 0,
+    "no-tabs": 0,
+    "no-fallthrough": "warn",
+    "prefer-const": "error",
+    "quotes": "off",
+    "no-unused-vars": "off",
+    "semi": [2, "never"],
+    // "comma-dangle": [
+    //   "error",
+    //   {
+    //     "arrays": "always-multiline",
+    //     "objects": "always-multiline",
+    //     "imports": "always-multiline",
+    //     "exports": "always-multiline",
+    //     "functions": "always-multiline"
+    //   }
+    // ],
+    "comma-dangle": "off",
+    "react/prop-types": [0],
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    // "new-cap": [2, { "capIsNewExceptions": ["List", "Map", "Set", "Function"] }],
+    "new-cap": "off",
+    "react/no-multi-comp": 0,
+    "import/default": 0,
+    "import/no-duplicates": 0,
+    "import/named": 0,
+    "import/namespace": 0,
+    "import/no-unresolved": 0,
+    "import/no-named-as-default": "off",
+    "react/prefer-stateless-function": "off",
+    "linebreak-style": 0
+  },
+  "globals": {
+    "__DEVELOPMENT__": true,
+    "__CLIENT__": true,
+    "__SERVER__": true,
+    "__DISABLE_SSR__": true,
+    "__DEVTOOLS__": true,
+    "socket": true,
+    "webpackIsomorphicTools": true
+  }
 }

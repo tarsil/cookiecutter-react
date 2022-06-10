@@ -1,8 +1,8 @@
-import { Navigate, Route, Routes } from "react-router-dom";
-import React, { Component } from "react";
+import { Navigate, Route, Routes } from "react-router-dom"
+import React, { Component } from "react"
 
-import Page from "react-page-loading";
-import ScrollUpBtn from "./components/shared/ScrollUp";
+import Page from "react-page-loading"
+import ScrollUpBtn from "./components/shared/ScrollUp"
 
 class App extends Component {
   render() {
@@ -45,8 +45,8 @@ class App extends Component {
           <ScrollUpBtn />
         </Page>
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App
