@@ -2,6 +2,8 @@
   "project_name": "myproject",
   "_copy_without_render": [
     "src/components/auth/RequireAuth.jsx",
-    "src/components/shared/ScrollUp.jsx"
+    "src/components/shared/ScrollUp.jsx",
+    "src/core/auth/authContext.jsx",
+    "src/core/auth/PrivateRoute.jsx"
   ]
 }
