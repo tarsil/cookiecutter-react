@@ -12,7 +12,6 @@ export const AuthProvider = ({ children }) => {
     if (TokenHelper.isLoggedIn()) {
       return true
     } else if (TokenHelper.isRefreshable()) {
-      authService.refreshToken()
       return true
     } else {
       authService.logout()
