@@ -38,6 +38,19 @@ const login = (email, password) => {
     })
 }
 
+const refreshToken = () => {
+  return httpClient
+    .post("/auth/api/token/refresh", {
+      refresh: TokenHelper.getLocalRefreshToken(),
+    })
+    .then((response) => {
+      if (response.data.access) {
+        TokenHelper.setAccessToken(response.data)
+      }
+      return response.data
+    })
+}
+
 /**
  * Logout of the application
  */
